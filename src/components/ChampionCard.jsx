@@ -12,6 +12,7 @@ function ChampionCard({ champName, openModal }) {
 			<img
 				src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champName}_0.jpg`}
 				className={style.cardImg}
+				alt=""
 			/>
 		</article>
 	);
