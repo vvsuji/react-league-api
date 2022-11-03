@@ -1,9 +1,6 @@
 import style from './Modal.module.css';
 
-function Modal({ champName, openModal, closeModal, open, id, hidden }) {
-	if (!open) {
-		return null;
-	}
+function Modal({ champName, closeModal }) {
 	return (
 		<div className={style.modalContainer} id="moda" onClick={closeModal}>
 			<div id={style.modal}>

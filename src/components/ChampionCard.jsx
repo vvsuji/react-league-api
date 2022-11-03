@@ -18,10 +18,4 @@ function ChampionCard({ champName, openModal }) {
 	);
 }
 
-// function test({ message, messageTwo }) {
-// 	console.log(message, messageTwo);
-// }
-
-// test({ nessage: 'hi', messageTwo: 'bye' });
-
 export default ChampionCard;
