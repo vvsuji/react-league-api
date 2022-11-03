@@ -1,0 +1,23 @@
+.card {
+	height: 100%;
+	width: 225px;
+	border-radius: 1em;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+	flex-direction: row;
+	transition: all 300ms;
+	justify-content: space-around;
+	margin: 3px;
+}
+
+.card:hover {
+	filter: brightness(1.5);
+	transform: scale(1.01);
+}
+
+.cardImg {
+	height: 100%;
+	width: 100%;
+}
