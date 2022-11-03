@@ -27,13 +27,11 @@ function App() {
 		console.log(champName);
 		setSelectedChamp(champions[champName]);
 		setOpen(true);
-		const hidden = document.getElementById('hidden');
-		hidden.setAttribute('id', 'moda');
 	}
 
 	function closeModal() {
 		const moda = document.getElementById('moda');
-		moda.setAttribute('id', 'hidden');
+		moda.classList.toggle('hidden');
 	}
 	// TODO: Write another function for closing the modal
 	useEffect(() => {
@@ -48,7 +46,11 @@ function App() {
 				<h1>Suji's Epic League of L*gends Viewer (for nerds only)</h1>
 			</header>
 			{/* TODO: conditionally render the Modal depending on `isOpen` state */}
-			<Modal champName={selectedChamp} closeModal={closeModal} />
+			<Modal
+				champName={selectedChamp}
+				closeModal={closeModal}
+				id={selectedChamp.name}
+			/>
 			{/* TODO: Pass in the currently selected champ */}
 			<div className={style.container}>
 				{championsArray.map(([champName]) => (
