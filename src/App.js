@@ -39,6 +39,7 @@ function App() {
 	// console.log(selectedChamp);
 	// Now that we have our data in the champions state
 	const championsArray = Object.entries(champions);
+	console.log(championsArray);
 	return (
 		<div className="App">
 			<header>

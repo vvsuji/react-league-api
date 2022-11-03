@@ -1,6 +1,6 @@
 import style from './Modal.module.css';
 
-function Modal({ champName, closeModal }) {
+function Modal({ champName, championsArray, closeModal }) {
 	return (
 		<div className={style.modalContainer} id="moda" onClick={closeModal}>
 			<div id={style.modal}>
@@ -10,8 +10,8 @@ function Modal({ champName, closeModal }) {
 						id={style.splash}
 						alt=""
 					/>
-					<h3 id={style.champName}> </h3>
-					<p id={style.title}></p>
+					<h3 id={style.champName}>{champName.name}</h3>
+					<p id={style.title}>{}</p>
 					<p id={style.type}></p>
 					<p id={style.blurb}></p>
 					{/* <p id={tags}></p>
