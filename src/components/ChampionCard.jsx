@@ -1,9 +1,6 @@
 import style from './ChampionCard.module.css';
 
-//dont need champ name and data right? can i make champload connect with cardimg and show the pic that iterates?
 function ChampionCard({ champName, openModal }) {
-	// By the time I'm here in this function,
-	// I am operating on only one champion!
 	function onClick() {
 		openModal(champName);
 	}
@@ -12,7 +9,7 @@ function ChampionCard({ champName, openModal }) {
 			<img
 				src={`https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${champName}_0.jpg`}
 				className={style.cardImg}
-				alt=""
+				alt=''
 			/>
 		</article>
 	);
