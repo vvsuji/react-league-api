@@ -3,7 +3,7 @@ import ChampionCard from './components/ChampionCard';
 import style from './App.module.css';
 import Modal from './components/Modal';
 
-const url = `http://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion.json`;
+const url = `http://ddragon.leagueoflegends.com/cdn/12.22.1/data/en_US/champion.json`;
 
 function App() {
 	const [champions, setChampions] = useState({});

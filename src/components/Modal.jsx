@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 
 function Modal({ champName, closeModal }) {
 	useEffect(() => {
-		fetch(`http://ddragon.leagueoflegends.com/cdn/12.21.1/data/en_US/champion/${champName.name}.json
+		fetch(`http://ddragon.leagueoflegends.com/cdn/12.22.1/data/en_US/champion/${champName.name}.json
     `);
 		console.log(champName.name);
 	});
